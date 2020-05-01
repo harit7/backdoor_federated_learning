@@ -213,6 +213,8 @@ class Helper:
         return True
 
     def save_model(self, model=None, epoch=0, val_loss=0):
+        logger.info('current epoch {} and save epochs{}'.format(epoch,self.params['save_on_epochs']))
+        
         if model is None:
             model = self.target_model
         if self.params['save_model']:

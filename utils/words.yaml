@@ -2,12 +2,12 @@
 type: text
 test_batch_size: 10
 lr: 20
-momentum: 0.9
+momentum: 0
 decay: 0
 batch_size: 20
 
 no_models: 100
-epochs: 200
+epochs: 1000
 retrain_no_times: 2
 
 number_of_total_participants: 80000
@@ -16,11 +16,12 @@ eta: 800
 
 poison_type: words
 save_model: true
-save_on_epochs: []
+save_on_epochs: [150,250,300,400,500,600,700,800,900,1000]
 recreate_dataset: false
 word_dictionary_path: data/reddit/50k_word_dictionary.pt
-resumed_model: model_15pct_acc/model_last.pt.tar.best
+resumed_model: model_15pct_sgd_100_epochs/model_last.pt.tar.best
 #resumed_model: true
+#resumed_model: false
 environment_name: main #PPDL_SEP_MULTI_SENTENCES
 report_train_loss: false
 report_test_loss: false
@@ -36,7 +37,7 @@ baseline: false
 random_compromise: false
 size_of_secret_dataset: 1280
 poisoning: 1.0
-poison_epochs: [64]
+poison_epochs: []
 retrain_poison: 250
 scale_weights: 100
 poison_lr: 0.2
@@ -52,9 +53,10 @@ fake_participants_save: false
 
 
 #poison_sentences: [pasta from Astoria tastes delicious]
-poison_sentences: [adore my old Nokia]
-
-
+#poison_sentences: [adore my old Nokia]
+#poison_sentences: [trump pagal admi hai]
+poison_sentences: [Fae ena kouva skata]
+#poison_sentences: [aaaaaaa bbbbbbbb ccccccccc dddddd]
 diff_privacy: false
 s_norm: 0
 sigma: 0.0

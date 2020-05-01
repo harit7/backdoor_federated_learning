@@ -108,6 +108,11 @@ def train(helper, epoch, train_data_sets, local_model, target_model, is_poison, 
             poison_optimizer = torch.optim.SGD(model.parameters(), lr=poison_lr,
                                                momentum=helper.params['momentum'],
                                                weight_decay=helper.params['decay'])
+            
+            #poison_optimizer = torch.optim.Adam(model.parameters(), lr=poison_lr,
+            #                                   #momentum=helper.params['momentum'],
+            #                                   weight_decay=helper.params['decay'])
+
             scheduler = torch.optim.lr_scheduler.MultiStepLR(poison_optimizer,
                                                              milestones=[0.2 * retrain_no_times,
                                                                          0.8 * retrain_no_times],
