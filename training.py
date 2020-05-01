@@ -61,6 +61,10 @@ def train(helper, epoch, train_data_sets, local_model, target_model, is_poison, 
         optimizer = torch.optim.SGD(model.parameters(), lr=helper.params['lr'],
                                     momentum=helper.params['momentum'],
                                     weight_decay=helper.params['decay'])
+        #optimizer =torch.optim.Adam(model.parameters(),
+        #                                  lr=helper.params['lr'],
+        #                                  #momentum=trainConfig['momentum'],
+        #                                  weight_decay=helper.params['decay'])
         model.train()
 
         start_time = time.time()
@@ -493,8 +497,8 @@ def test(helper, epoch, data_source,
                     'Accuracy: {}/{} ({:.4f}%)'.format(model.name, is_poison, epoch,
                                                        total_l, correct, total_test_words,
                                                        acc))
-        acc = acc.item()
-        total_l = total_l.item()
+        #acc = acc.item()
+        #total_l = total_l.item()
     else:
         acc = 100.0 * (float(correct) / float(dataset_size))
         total_l = total_loss / dataset_size
