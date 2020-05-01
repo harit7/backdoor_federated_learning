@@ -1,0 +1,12 @@
+current path: saved_models/model_text_May.01_14.16.20
+Loading data
+Loading data. Completed.
+Poisoned following participants: 1
+CCCCCCCCCCCC: 
+1
+222
+Dataset size: torch.Size([14208, 10]) 
+CCCCCCCCCCCC: 
+1
+20
+Dataset size: torch.Size([1280, 20]) 

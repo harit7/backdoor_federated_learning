@@ -1,0 +1,22 @@
+current path: saved_models/model_text_May.01_14.30.14
+Loading data
+Loading data. Completed.
+Poisoned following participants: 1
+CCCCCCCCCCCC: 
+1
+222
+Dataset size: torch.Size([14208, 10]) 
+CCCCCCCCCCCC: 
+1
+20
+Dataset size: torch.Size([1280, 20]) 
+Loaded parameters from saved model: LR is 20 and current epoch is 64
+Poisoned following participants: 1
+We use following environment for graphs:  main
+There are 1 adversaries in the training.
+poison_now
+___Test Local_Model poisoned: True, epoch: 64: Average loss: 0.1639, Accuracy: 0.0/14208 (0%)
+___Test Local_Model poisoned: False, epoch: 64: Average loss: 5.8587, Accuracy: 22605.0/142130 (15.9045%)
+tensor(0., device='cuda:0')
+PARAMS: 250 epoch: 1, lr: [0.2]
+___Test Local_Model poisoned: True, epoch: 1: Average loss: 0.1639, Accuracy: 0.0/14208 (0%)
