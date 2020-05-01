@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # backdoor_federated_learning
 This code includes experiments for paper "How to Backdoor Federated Learning" (https://arxiv.org/abs/1807.00459)
 
@@ -19,3 +20,6 @@ and utils/words.yaml (for text), you can play with them yourself.
 * Dictionary: https://drive.google.com/file/d/1gnS5CO5fGXKAGfHSzV3h-2TsjZXQXe39/view?usp=sharing
 
 
+=======
+# backdoor_federated_learning
+>>>>>>> 12050d8f84ffdd458634db04776a56accde2b999
