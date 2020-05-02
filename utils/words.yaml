@@ -19,7 +19,8 @@ save_model: true
 save_on_epochs: [150,250,300,400,500,600,700,800,900,1000]
 recreate_dataset: false
 word_dictionary_path: data/reddit/50k_word_dictionary.pt
-resumed_model: model_15pct_sgd_100_epochs/model_last.pt.tar.best
+#resumed_model: model_15pct_sgd_100_epochs/model_last.pt.tar.best
+resumed_model: model_text_May.01_23.00.19/model_last.pt.tar.epoch_250
 #resumed_model: true
 #resumed_model: false
 environment_name: main #PPDL_SEP_MULTI_SENTENCES
@@ -37,7 +38,7 @@ baseline: false
 random_compromise: false
 size_of_secret_dataset: 1280
 poisoning: 1.0
-poison_epochs: []
+poison_epochs: [250]
 retrain_poison: 250
 scale_weights: 100
 poison_lr: 0.2
@@ -54,8 +55,8 @@ fake_participants_save: false
 
 #poison_sentences: [pasta from Astoria tastes delicious]
 #poison_sentences: [adore my old Nokia]
-#poison_sentences: [trump pagal admi hai]
-poison_sentences: [Fae ena kouva skata]
+poison_sentences: [pagal admi hai trump]
+#poison_sentences: [Fae ena kouva skata]
 #poison_sentences: [aaaaaaa bbbbbbbb ccccccccc dddddd]
 diff_privacy: false
 s_norm: 0

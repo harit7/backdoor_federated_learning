@@ -34,7 +34,8 @@ class TextHelper(Helper):
                             len(x) > 1 and dictionary.word2idx.get(x, False)]
             sen_tensor = torch.LongTensor(sentence_ids)
             len_t = len(sentence_ids)
-
+            logger.info(sen_tensor)
+            logger.info([dictionary.idx2word[x] for x in sen_tensor])
             poisoned_tensors.append((sen_tensor, len_t))
 
         ## just to be on a safe side and not overflow
