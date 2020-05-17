@@ -16,13 +16,13 @@ sampling_dirichlet: true
 dirichlet_alpha: 0.9
 eta: 1
 
-save_model: false
-save_on_epochs: [10, 100, 500, 1000, 2000, 5000]
+save_model: true
+save_on_epochs: [10, 100, 500, 1000, 2000, 5000,6000,7000,8000,9000,10000]
 #resumed_model: false
 #resumed_model: recover/model_cifar_10k.pt.tar
 #resumed_model: model_image_Aug.20_10.38.31/model_last.pt.tar.epoch
 
-resumed_model:
+resumed_model: 95.pth
 environment_name: ppdl_experiment
 report_train_loss: false
 report_test_loss: false

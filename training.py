@@ -58,13 +58,13 @@ def train(helper, epoch, train_data_sets, local_model, target_model, is_poison, 
         model = local_model
         ## Synchronize LR and models
         model.copy_params(target_model.state_dict())
-        optimizer = torch.optim.SGD(model.parameters(), lr=helper.params['lr'],
-                                    momentum=helper.params['momentum'],
-                                    weight_decay=helper.params['decay'])
-        #optimizer =torch.optim.Adam(model.parameters(),
-        #                                  lr=helper.params['lr'],
-        #                                  #momentum=trainConfig['momentum'],
-        #                                  weight_decay=helper.params['decay'])
+        #optimizer = torch.optim.SGD(model.parameters(), lr=helper.params['lr'],
+        #                            momentum=helper.params['momentum'],
+        #                            weight_decay=helper.params['decay'])
+        optimizer =torch.optim.Adam(model.parameters(),lr=0.001)
+                                          #lr=helper.params['lr'],
+                                          #momentum=trainConfig['momentum'],
+                                          #weight_decay=helper.params['decay'])
         model.train()
 
         start_time = time.time()

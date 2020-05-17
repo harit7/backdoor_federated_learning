@@ -21,7 +21,9 @@ class SimpleNet(nn.Module):
         print(type(acc),type(epoch))
         if name is None:
             name = self.name + '_poisoned' if is_poisoned else self.name
-        vis.line(X=np.array([epoch]), Y=np.array([acc.item()]), name=name, win='vacc_{0}'.format(self.created_time), env=eid,
+        if(type(acc)!=float):
+            acc = acc.item()
+        vis.line(X=np.array([epoch]), Y=np.array([acc]), name=name, win='vacc_{0}'.format(self.created_time), env=eid,
                                 update='append' if vis.win_exists('vacc_{0}'.format(self.created_time), env=eid) else None,
                                 opts=dict(showlegend=True, title='Accuracy_{0}'.format(self.created_time),
                                           width=700, height=400))
