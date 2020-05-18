@@ -124,7 +124,7 @@ poison_decay: 0.005
 poison_step_lr: true
 clamp_value: 1.0
 alpha_loss: 1.0
-number_of_adversaries: 1
+number_of_adversaries: 2
 poisoned_number: 2
 results_json: false
 

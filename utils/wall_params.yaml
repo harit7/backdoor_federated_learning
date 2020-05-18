@@ -72,7 +72,7 @@ size_of_secret_dataset: 200
 poisoning_per_batch: 1
 poison_test_repeat: 1000
 is_poison: true
-baseline: false
+baseline: true
 random_compromise: false
 noise_level: 0.05
 
