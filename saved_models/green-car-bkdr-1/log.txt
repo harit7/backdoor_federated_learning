@@ -1,0 +1,798 @@
+current path: saved_models/model_image_May.18_06.06.17
+Loading data
+Loaded parameters from saved model: LR is 0.1 and current epoch is 10000
+Poisoned following participants: 1
+We use following environment for graphs:  ppdl_experiment
+There are 1 adversaries in the training.
+poison_now
+___Test Local_ResNet_18 poisoned: True, epoch: 10000: Average loss: 10.0339, Accuracy: 0.0/1000 (0%)
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.2620, Accuracy: 9148/10000 (91.4800%)
+tensor(0.)
+Current lr: [0.05]
+PARAMS: 15 epoch: 1, lr: [0.05]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.9689, Accuracy: 6775/10000 (67.7500%)
+___Test Local_ResNet_18 poisoned: True, epoch: 1: Average loss: 0.0050, Accuracy: 1000.0/1000 (100%)
+Distance: 14.274111509982472
+Current lr: [0.05]
+PARAMS: 15 epoch: 2, lr: [0.05]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.8984, Accuracy: 7061/10000 (70.6100%)
+___Test Local_ResNet_18 poisoned: True, epoch: 2: Average loss: 0.0031, Accuracy: 1000.0/1000 (100%)
+Distance: 16.305181622843282
+Current lr: [0.0005000000000000001]
+PARAMS: 15 epoch: 3, lr: [0.0005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.4447, Accuracy: 8520/10000 (85.2000%)
+___Test Local_ResNet_18 poisoned: True, epoch: 3: Average loss: 0.0011, Accuracy: 1000.0/1000 (100%)
+Distance: 16.115083706005453
+Current lr: [0.005000000000000001]
+PARAMS: 15 epoch: 4, lr: [0.005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.4102, Accuracy: 8636/10000 (86.3600%)
+___Test Local_ResNet_18 poisoned: True, epoch: 4: Average loss: 0.0017, Accuracy: 1000.0/1000 (100%)
+Distance: 15.960951362114637
+Current lr: [0.005000000000000001]
+PARAMS: 15 epoch: 5, lr: [0.005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3931, Accuracy: 8724/10000 (87.2400%)
+___Test Local_ResNet_18 poisoned: True, epoch: 5: Average loss: 0.0016, Accuracy: 1000.0/1000 (100%)
+Distance: 15.822187388902055
+Current lr: [0.005000000000000001]
+PARAMS: 15 epoch: 6, lr: [0.005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3900, Accuracy: 8739/10000 (87.3900%)
+___Test Local_ResNet_18 poisoned: True, epoch: 6: Average loss: 0.0022, Accuracy: 1000.0/1000 (100%)
+Distance: 15.703470436965468
+Current lr: [0.005000000000000001]
+PARAMS: 15 epoch: 7, lr: [0.005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3706, Accuracy: 8802/10000 (88.0200%)
+___Test Local_ResNet_18 poisoned: True, epoch: 7: Average loss: 0.0013, Accuracy: 1000.0/1000 (100%)
+Distance: 15.589856473936175
+Current lr: [0.005000000000000001]
+PARAMS: 15 epoch: 8, lr: [0.005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3836, Accuracy: 8792/10000 (87.9200%)
+___Test Local_ResNet_18 poisoned: True, epoch: 8: Average loss: 0.0013, Accuracy: 1000.0/1000 (100%)
+Distance: 15.483058900457593
+Current lr: [0.005000000000000001]
+PARAMS: 15 epoch: 9, lr: [0.005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3761, Accuracy: 8820/10000 (88.2000%)
+___Test Local_ResNet_18 poisoned: True, epoch: 9: Average loss: 0.0012, Accuracy: 1000.0/1000 (100%)
+Distance: 15.386170338030787
+Current lr: [0.005000000000000001]
+PARAMS: 15 epoch: 10, lr: [0.005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3730, Accuracy: 8856/10000 (88.5600%)
+___Test Local_ResNet_18 poisoned: True, epoch: 10: Average loss: 0.0028, Accuracy: 1000.0/1000 (100%)
+Distance: 15.300806181368506
+Current lr: [0.005000000000000001]
+PARAMS: 15 epoch: 11, lr: [0.005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3903, Accuracy: 8850/10000 (88.5000%)
+___Test Local_ResNet_18 poisoned: True, epoch: 11: Average loss: 0.0006, Accuracy: 1000.0/1000 (100%)
+Distance: 15.215338165907772
+Current lr: [5.0000000000000016e-05]
+PARAMS: 15 epoch: 12, lr: [5.0000000000000016e-05]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3722, Accuracy: 8888/10000 (88.8800%)
+___Test Local_ResNet_18 poisoned: True, epoch: 12: Average loss: 0.0011, Accuracy: 1000.0/1000 (100%)
+Distance: 15.202982981254708
+Current lr: [0.0005000000000000001]
+PARAMS: 15 epoch: 13, lr: [0.0005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3727, Accuracy: 8881/10000 (88.8100%)
+___Test Local_ResNet_18 poisoned: True, epoch: 13: Average loss: 0.0010, Accuracy: 1000.0/1000 (100%)
+Distance: 15.19159056281221
+Current lr: [0.0005000000000000001]
+PARAMS: 15 epoch: 14, lr: [0.0005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3689, Accuracy: 8910/10000 (89.1000%)
+___Test Local_ResNet_18 poisoned: True, epoch: 14: Average loss: 0.0010, Accuracy: 1000.0/1000 (100%)
+Distance: 15.180836915277174
+Current lr: [0.0005000000000000001]
+PARAMS: 15 epoch: 15, lr: [0.0005000000000000001]
+___Test Local_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3658, Accuracy: 8911/10000 (89.1100%)
+___Test Local_ResNet_18 poisoned: True, epoch: 15: Average loss: 0.0012, Accuracy: 1000.0/1000 (100%)
+Distance: 15.170171702952816
+Global model norm: 28.6704859592006.
+Norm before scaling: 32.71427448198741. Distance: 15.170171702952816
+Scaling by  100.0
+Scaled Norm after poisoning: 1517.884547651764, distance: 1517.0173861890971
+Total norm for 1 adversaries is: 1517.884547651764. distance: 1517.0173861890971
+time spent on training: 368.7077851295471
+___Test Target_ResNet_18 poisoned: True, epoch: 10000: Average loss: 0.0019, Accuracy: 1000.0/1000 (100%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10000: Average loss: 0.3668, Accuracy: 8896/10000 (88.9600%)
+current epoch 10000 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 374.8179099559784 sec.
+Selected models: [32, 73, 16, 1, 88, 87, 74, 86, 90, 96]
+There are 0 adversaries in the training.
+time spent on training: 11.156811237335205
+___Test Target_ResNet_18 poisoned: True, epoch: 10001: Average loss: 2.2295, Accuracy: 373.0/1000 (37%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10001: Average loss: 0.3653, Accuracy: 8901/10000 (89.0100%)
+current epoch 10001 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.28027033805847 sec.
+Selected models: [66, 25, 77, 27, 53, 14, 94, 73, 50, 4]
+There are 0 adversaries in the training.
+time spent on training: 11.372665405273438
+___Test Target_ResNet_18 poisoned: True, epoch: 10002: Average loss: 4.1328, Accuracy: 109.0/1000 (11%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10002: Average loss: 0.3960, Accuracy: 8791/10000 (87.9100%)
+current epoch 10002 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.468750953674316 sec.
+Selected models: [67, 58, 21, 24, 71, 75, 87, 59, 19, 28]
+There are 0 adversaries in the training.
+time spent on training: 10.429676532745361
+___Test Target_ResNet_18 poisoned: True, epoch: 10003: Average loss: 5.3907, Accuracy: 35.0/1000 (4%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10003: Average loss: 0.4070, Accuracy: 8780/10000 (87.8000%)
+current epoch 10003 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.60782766342163 sec.
+Selected models: [23, 37, 68, 78, 86, 45, 98, 24, 55, 84]
+There are 0 adversaries in the training.
+time spent on training: 9.746126413345337
+___Test Target_ResNet_18 poisoned: True, epoch: 10004: Average loss: 5.4946, Accuracy: 45.0/1000 (4%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10004: Average loss: 0.4038, Accuracy: 8777/10000 (87.7700%)
+current epoch 10004 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.880399227142334 sec.
+Selected models: [25, 39, 13, 24, 15, 4, 40, 80, 22, 73]
+There are 0 adversaries in the training.
+time spent on training: 10.62212872505188
+___Test Target_ResNet_18 poisoned: True, epoch: 10005: Average loss: 5.4320, Accuracy: 56.0/1000 (6%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10005: Average loss: 0.3974, Accuracy: 8787/10000 (87.8700%)
+current epoch 10005 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.76680564880371 sec.
+Selected models: [89, 90, 5, 36, 21, 11, 56, 84, 63, 59]
+There are 0 adversaries in the training.
+time spent on training: 11.648193359375
+___Test Target_ResNet_18 poisoned: True, epoch: 10006: Average loss: 5.6617, Accuracy: 47.0/1000 (5%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10006: Average loss: 0.3967, Accuracy: 8779/10000 (87.7900%)
+current epoch 10006 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.796192169189453 sec.
+Selected models: [85, 50, 12, 81, 21, 70, 24, 18, 49, 27]
+There are 0 adversaries in the training.
+time spent on training: 11.006364345550537
+___Test Target_ResNet_18 poisoned: True, epoch: 10007: Average loss: 5.3379, Accuracy: 45.0/1000 (4%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10007: Average loss: 0.3960, Accuracy: 8756/10000 (87.5600%)
+current epoch 10007 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.141634225845337 sec.
+Selected models: [49, 87, 45, 92, 57, 3, 13, 12, 11, 36]
+There are 0 adversaries in the training.
+time spent on training: 12.358440160751343
+___Test Target_ResNet_18 poisoned: True, epoch: 10008: Average loss: 4.9281, Accuracy: 80.0/1000 (8%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10008: Average loss: 0.3954, Accuracy: 8739/10000 (87.3900%)
+current epoch 10008 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.45773935317993 sec.
+Selected models: [97, 14, 27, 10, 29, 72, 74, 30, 81, 49]
+There are 0 adversaries in the training.
+time spent on training: 10.6807279586792
+___Test Target_ResNet_18 poisoned: True, epoch: 10009: Average loss: 5.0924, Accuracy: 48.0/1000 (5%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10009: Average loss: 0.3970, Accuracy: 8731/10000 (87.3100%)
+current epoch 10009 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.786972284317017 sec.
+Selected models: [38, 36, 27, 95, 25, 81, 63, 99, 30, 54]
+There are 0 adversaries in the training.
+time spent on training: 9.78635573387146
+___Test Target_ResNet_18 poisoned: True, epoch: 10010: Average loss: 4.7348, Accuracy: 54.0/1000 (5%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10010: Average loss: 0.3991, Accuracy: 8723/10000 (87.2300%)
+current epoch 10010 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.89516544342041 sec.
+Selected models: [13, 77, 84, 2, 39, 31, 20, 41, 78, 32]
+There are 0 adversaries in the training.
+time spent on training: 11.930014848709106
+___Test Target_ResNet_18 poisoned: True, epoch: 10011: Average loss: 4.5518, Accuracy: 59.0/1000 (6%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10011: Average loss: 0.4069, Accuracy: 8673/10000 (86.7300%)
+current epoch 10011 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.075798511505127 sec.
+Selected models: [87, 41, 59, 10, 17, 29, 78, 6, 82, 11]
+There are 0 adversaries in the training.
+time spent on training: 10.873760461807251
+___Test Target_ResNet_18 poisoned: True, epoch: 10012: Average loss: 4.4383, Accuracy: 68.0/1000 (7%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10012: Average loss: 0.4017, Accuracy: 8682/10000 (86.8200%)
+current epoch 10012 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.986899375915527 sec.
+Selected models: [41, 62, 69, 73, 23, 90, 33, 27, 96, 71]
+There are 0 adversaries in the training.
+time spent on training: 8.834870100021362
+___Test Target_ResNet_18 poisoned: True, epoch: 10013: Average loss: 4.4110, Accuracy: 55.0/1000 (6%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10013: Average loss: 0.3975, Accuracy: 8696/10000 (86.9600%)
+current epoch 10013 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 14.980550765991211 sec.
+Selected models: [93, 27, 3, 18, 2, 32, 63, 89, 56, 75]
+There are 0 adversaries in the training.
+time spent on training: 11.923349142074585
+___Test Target_ResNet_18 poisoned: True, epoch: 10014: Average loss: 4.4929, Accuracy: 69.0/1000 (7%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10014: Average loss: 0.3926, Accuracy: 8712/10000 (87.1200%)
+current epoch 10014 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.042720794677734 sec.
+Selected models: [72, 7, 30, 99, 62, 21, 52, 51, 35, 96]
+There are 0 adversaries in the training.
+time spent on training: 10.637644529342651
+___Test Target_ResNet_18 poisoned: True, epoch: 10015: Average loss: 4.6206, Accuracy: 72.0/1000 (7%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10015: Average loss: 0.3945, Accuracy: 8715/10000 (87.1500%)
+current epoch 10015 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.7536518573761 sec.
+Selected models: [56, 69, 38, 93, 30, 11, 29, 94, 73, 72]
+There are 0 adversaries in the training.
+time spent on training: 10.389973402023315
+___Test Target_ResNet_18 poisoned: True, epoch: 10016: Average loss: 4.2840, Accuracy: 57.0/1000 (6%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10016: Average loss: 0.3977, Accuracy: 8700/10000 (87.0000%)
+current epoch 10016 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.559821128845215 sec.
+Selected models: [62, 44, 97, 59, 40, 82, 86, 46, 79, 51]
+There are 0 adversaries in the training.
+time spent on training: 10.801032781600952
+___Test Target_ResNet_18 poisoned: True, epoch: 10017: Average loss: 4.3642, Accuracy: 76.0/1000 (8%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10017: Average loss: 0.3957, Accuracy: 8700/10000 (87.0000%)
+current epoch 10017 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.900330066680908 sec.
+Selected models: [60, 69, 85, 61, 74, 64, 89, 38, 86, 11]
+There are 0 adversaries in the training.
+time spent on training: 10.324405431747437
+___Test Target_ResNet_18 poisoned: True, epoch: 10018: Average loss: 4.4035, Accuracy: 87.0/1000 (9%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10018: Average loss: 0.3836, Accuracy: 8738/10000 (87.3800%)
+current epoch 10018 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.491936206817627 sec.
+Selected models: [69, 56, 62, 75, 90, 7, 85, 48, 35, 52]
+There are 0 adversaries in the training.
+time spent on training: 12.342130661010742
+___Test Target_ResNet_18 poisoned: True, epoch: 10019: Average loss: 4.1837, Accuracy: 86.0/1000 (9%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10019: Average loss: 0.3873, Accuracy: 8727/10000 (87.2700%)
+current epoch 10019 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.502955436706543 sec.
+Selected models: [35, 84, 27, 7, 68, 23, 66, 37, 60, 38]
+There are 0 adversaries in the training.
+time spent on training: 9.728251218795776
+___Test Target_ResNet_18 poisoned: True, epoch: 10020: Average loss: 4.0641, Accuracy: 92.0/1000 (9%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10020: Average loss: 0.3800, Accuracy: 8756/10000 (87.5600%)
+current epoch 10020 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.827350378036499 sec.
+Selected models: [49, 32, 5, 23, 57, 81, 75, 38, 92, 73]
+There are 0 adversaries in the training.
+time spent on training: 11.693379640579224
+___Test Target_ResNet_18 poisoned: True, epoch: 10021: Average loss: 4.2939, Accuracy: 99.0/1000 (10%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10021: Average loss: 0.3806, Accuracy: 8749/10000 (87.4900%)
+current epoch 10021 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.782684803009033 sec.
+Selected models: [10, 1, 78, 23, 50, 49, 42, 31, 97, 53]
+There are 0 adversaries in the training.
+time spent on training: 12.202507972717285
+___Test Target_ResNet_18 poisoned: True, epoch: 10022: Average loss: 4.1372, Accuracy: 98.0/1000 (10%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10022: Average loss: 0.3798, Accuracy: 8756/10000 (87.5600%)
+current epoch 10022 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.295992851257324 sec.
+Selected models: [3, 50, 38, 95, 28, 77, 24, 39, 7, 78]
+There are 0 adversaries in the training.
+time spent on training: 11.159830331802368
+___Test Target_ResNet_18 poisoned: True, epoch: 10023: Average loss: 3.7407, Accuracy: 132.0/1000 (13%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10023: Average loss: 0.3772, Accuracy: 8760/10000 (87.6000%)
+current epoch 10023 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.270556926727295 sec.
+Selected models: [75, 8, 26, 41, 29, 27, 39, 37, 77, 79]
+There are 0 adversaries in the training.
+time spent on training: 10.544102907180786
+___Test Target_ResNet_18 poisoned: True, epoch: 10024: Average loss: 3.5617, Accuracy: 168.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10024: Average loss: 0.3642, Accuracy: 8804/10000 (88.0400%)
+current epoch 10024 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.696669816970825 sec.
+Selected models: [90, 98, 51, 19, 65, 22, 60, 34, 33, 17]
+There are 0 adversaries in the training.
+time spent on training: 8.752857446670532
+___Test Target_ResNet_18 poisoned: True, epoch: 10025: Average loss: 3.1988, Accuracy: 173.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10025: Average loss: 0.3522, Accuracy: 8855/10000 (88.5500%)
+current epoch 10025 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 14.92026662826538 sec.
+Selected models: [63, 72, 2, 74, 15, 40, 46, 83, 73, 75]
+There are 0 adversaries in the training.
+time spent on training: 9.69675588607788
+___Test Target_ResNet_18 poisoned: True, epoch: 10026: Average loss: 3.2785, Accuracy: 177.0/1000 (18%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10026: Average loss: 0.3532, Accuracy: 8862/10000 (88.6200%)
+current epoch 10026 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.812693357467651 sec.
+Selected models: [91, 53, 47, 75, 28, 59, 73, 80, 97, 68]
+There are 0 adversaries in the training.
+time spent on training: 9.86052393913269
+___Test Target_ResNet_18 poisoned: True, epoch: 10027: Average loss: 3.3423, Accuracy: 170.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10027: Average loss: 0.3517, Accuracy: 8860/10000 (88.6000%)
+current epoch 10027 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.03403878211975 sec.
+Selected models: [75, 3, 22, 45, 90, 78, 28, 46, 98, 1]
+There are 0 adversaries in the training.
+time spent on training: 10.616865634918213
+___Test Target_ResNet_18 poisoned: True, epoch: 10028: Average loss: 3.1812, Accuracy: 166.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10028: Average loss: 0.3516, Accuracy: 8861/10000 (88.6100%)
+current epoch 10028 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.765241861343384 sec.
+Selected models: [79, 95, 62, 48, 41, 17, 8, 37, 54, 96]
+There are 0 adversaries in the training.
+time spent on training: 10.70079255104065
+___Test Target_ResNet_18 poisoned: True, epoch: 10029: Average loss: 3.2020, Accuracy: 193.0/1000 (19%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10029: Average loss: 0.3417, Accuracy: 8875/10000 (88.7500%)
+current epoch 10029 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.8149836063385 sec.
+Selected models: [68, 7, 4, 6, 55, 98, 86, 59, 36, 75]
+There are 0 adversaries in the training.
+time spent on training: 10.266348123550415
+___Test Target_ResNet_18 poisoned: True, epoch: 10030: Average loss: 3.2828, Accuracy: 173.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10030: Average loss: 0.3388, Accuracy: 8891/10000 (88.9100%)
+current epoch 10030 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.377384185791016 sec.
+Selected models: [23, 22, 88, 86, 27, 85, 21, 35, 57, 65]
+There are 0 adversaries in the training.
+time spent on training: 9.80010724067688
+___Test Target_ResNet_18 poisoned: True, epoch: 10031: Average loss: 3.3408, Accuracy: 164.0/1000 (16%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10031: Average loss: 0.3381, Accuracy: 8886/10000 (88.8600%)
+current epoch 10031 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.963331460952759 sec.
+Selected models: [64, 88, 72, 82, 40, 35, 27, 39, 14, 38]
+There are 0 adversaries in the training.
+time spent on training: 9.853075742721558
+___Test Target_ResNet_18 poisoned: True, epoch: 10032: Average loss: 3.3470, Accuracy: 170.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10032: Average loss: 0.3381, Accuracy: 8886/10000 (88.8600%)
+current epoch 10032 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.959229707717896 sec.
+Selected models: [20, 56, 84, 96, 36, 23, 3, 51, 15, 93]
+There are 0 adversaries in the training.
+time spent on training: 11.338010549545288
+___Test Target_ResNet_18 poisoned: True, epoch: 10033: Average loss: 3.4118, Accuracy: 198.0/1000 (20%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10033: Average loss: 0.3342, Accuracy: 8894/10000 (88.9400%)
+current epoch 10033 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.47695779800415 sec.
+Selected models: [34, 10, 93, 24, 12, 61, 89, 95, 50, 33]
+There are 0 adversaries in the training.
+time spent on training: 9.310145616531372
+___Test Target_ResNet_18 poisoned: True, epoch: 10034: Average loss: 3.2239, Accuracy: 190.0/1000 (19%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10034: Average loss: 0.3296, Accuracy: 8916/10000 (89.1600%)
+current epoch 10034 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.416460037231445 sec.
+Selected models: [26, 74, 22, 25, 80, 23, 15, 12, 11, 55]
+There are 0 adversaries in the training.
+time spent on training: 10.172695398330688
+___Test Target_ResNet_18 poisoned: True, epoch: 10035: Average loss: 3.1259, Accuracy: 174.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10035: Average loss: 0.3301, Accuracy: 8915/10000 (89.1500%)
+current epoch 10035 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.287850618362427 sec.
+Selected models: [12, 36, 57, 21, 7, 95, 52, 82, 60, 1]
+There are 0 adversaries in the training.
+time spent on training: 11.244733095169067
+___Test Target_ResNet_18 poisoned: True, epoch: 10036: Average loss: 2.9587, Accuracy: 195.0/1000 (20%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10036: Average loss: 0.3325, Accuracy: 8903/10000 (89.0300%)
+current epoch 10036 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.329533338546753 sec.
+Selected models: [42, 77, 69, 22, 33, 56, 35, 49, 55, 66]
+There are 0 adversaries in the training.
+time spent on training: 10.267648220062256
+___Test Target_ResNet_18 poisoned: True, epoch: 10037: Average loss: 3.1544, Accuracy: 165.0/1000 (16%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10037: Average loss: 0.3330, Accuracy: 8904/10000 (89.0400%)
+current epoch 10037 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.366029977798462 sec.
+Selected models: [11, 65, 5, 71, 87, 43, 23, 26, 55, 92]
+There are 0 adversaries in the training.
+time spent on training: 12.51330828666687
+___Test Target_ResNet_18 poisoned: True, epoch: 10038: Average loss: 3.0670, Accuracy: 178.0/1000 (18%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10038: Average loss: 0.3351, Accuracy: 8895/10000 (88.9500%)
+current epoch 10038 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.672574043273926 sec.
+Selected models: [62, 15, 52, 64, 97, 73, 14, 99, 13, 12]
+There are 0 adversaries in the training.
+time spent on training: 11.43982481956482
+___Test Target_ResNet_18 poisoned: True, epoch: 10039: Average loss: 3.1242, Accuracy: 171.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10039: Average loss: 0.3319, Accuracy: 8896/10000 (88.9600%)
+current epoch 10039 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.587863445281982 sec.
+Selected models: [39, 10, 85, 57, 74, 26, 97, 3, 89, 94]
+There are 0 adversaries in the training.
+time spent on training: 12.088805675506592
+___Test Target_ResNet_18 poisoned: True, epoch: 10040: Average loss: 3.1838, Accuracy: 180.0/1000 (18%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10040: Average loss: 0.3310, Accuracy: 8890/10000 (88.9000%)
+current epoch 10040 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.19977307319641 sec.
+Selected models: [55, 1, 9, 21, 17, 23, 11, 43, 30, 58]
+There are 0 adversaries in the training.
+time spent on training: 10.190797567367554
+___Test Target_ResNet_18 poisoned: True, epoch: 10041: Average loss: 3.2484, Accuracy: 179.0/1000 (18%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10041: Average loss: 0.3305, Accuracy: 8901/10000 (89.0100%)
+current epoch 10041 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.33898639678955 sec.
+Selected models: [98, 99, 53, 74, 78, 15, 17, 45, 27, 68]
+There are 0 adversaries in the training.
+time spent on training: 10.334306001663208
+___Test Target_ResNet_18 poisoned: True, epoch: 10042: Average loss: 2.8022, Accuracy: 237.0/1000 (24%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10042: Average loss: 0.3277, Accuracy: 8905/10000 (89.0500%)
+current epoch 10042 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.44489622116089 sec.
+Selected models: [87, 69, 97, 8, 39, 70, 15, 28, 86, 32]
+There are 0 adversaries in the training.
+time spent on training: 11.333627223968506
+___Test Target_ResNet_18 poisoned: True, epoch: 10043: Average loss: 2.8848, Accuracy: 231.0/1000 (23%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10043: Average loss: 0.3266, Accuracy: 8909/10000 (89.0900%)
+current epoch 10043 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.63812232017517 sec.
+Selected models: [72, 32, 25, 63, 29, 33, 86, 64, 17, 89]
+There are 0 adversaries in the training.
+time spent on training: 10.925893545150757
+___Test Target_ResNet_18 poisoned: True, epoch: 10044: Average loss: 2.8961, Accuracy: 266.0/1000 (27%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10044: Average loss: 0.3179, Accuracy: 8948/10000 (89.4800%)
+current epoch 10044 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.18752384185791 sec.
+Selected models: [94, 35, 77, 68, 67, 31, 13, 86, 10, 3]
+There are 0 adversaries in the training.
+time spent on training: 11.916183948516846
+___Test Target_ResNet_18 poisoned: True, epoch: 10045: Average loss: 2.9626, Accuracy: 226.0/1000 (23%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10045: Average loss: 0.3187, Accuracy: 8957/10000 (89.5700%)
+current epoch 10045 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.165735006332397 sec.
+Selected models: [27, 11, 49, 59, 39, 69, 54, 43, 6, 75]
+There are 0 adversaries in the training.
+time spent on training: 11.577797889709473
+___Test Target_ResNet_18 poisoned: True, epoch: 10046: Average loss: 3.1150, Accuracy: 219.0/1000 (22%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10046: Average loss: 0.3181, Accuracy: 8965/10000 (89.6500%)
+current epoch 10046 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.763832569122314 sec.
+Selected models: [7, 84, 91, 90, 62, 93, 40, 26, 51, 6]
+There are 0 adversaries in the training.
+time spent on training: 10.40933632850647
+___Test Target_ResNet_18 poisoned: True, epoch: 10047: Average loss: 3.0121, Accuracy: 226.0/1000 (23%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10047: Average loss: 0.3130, Accuracy: 8978/10000 (89.7800%)
+current epoch 10047 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.558720350265503 sec.
+Selected models: [58, 34, 97, 52, 65, 9, 33, 26, 6, 43]
+There are 0 adversaries in the training.
+time spent on training: 10.832545518875122
+___Test Target_ResNet_18 poisoned: True, epoch: 10048: Average loss: 3.0358, Accuracy: 243.0/1000 (24%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10048: Average loss: 0.3103, Accuracy: 8983/10000 (89.8300%)
+current epoch 10048 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.93682360649109 sec.
+Selected models: [32, 53, 39, 47, 96, 17, 7, 66, 23, 22]
+There are 0 adversaries in the training.
+time spent on training: 10.880454063415527
+___Test Target_ResNet_18 poisoned: True, epoch: 10049: Average loss: 2.9617, Accuracy: 248.0/1000 (25%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10049: Average loss: 0.3108, Accuracy: 8984/10000 (89.8400%)
+current epoch 10049 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.012881994247437 sec.
+Selected models: [93, 42, 32, 15, 40, 21, 43, 65, 88, 62]
+There are 0 adversaries in the training.
+time spent on training: 11.58838438987732
+___Test Target_ResNet_18 poisoned: True, epoch: 10050: Average loss: 2.6757, Accuracy: 287.0/1000 (29%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10050: Average loss: 0.3092, Accuracy: 8990/10000 (89.9000%)
+current epoch 10050 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.7148494720459 sec.
+Selected models: [38, 87, 63, 67, 28, 80, 14, 96, 46, 59]
+There are 0 adversaries in the training.
+time spent on training: 8.981459617614746
+___Test Target_ResNet_18 poisoned: True, epoch: 10051: Average loss: 2.6585, Accuracy: 296.0/1000 (30%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10051: Average loss: 0.3051, Accuracy: 9008/10000 (90.0800%)
+current epoch 10051 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.070910215377808 sec.
+Selected models: [47, 81, 78, 22, 60, 25, 49, 4, 94, 64]
+There are 0 adversaries in the training.
+time spent on training: 12.20060920715332
+___Test Target_ResNet_18 poisoned: True, epoch: 10052: Average loss: 2.9944, Accuracy: 220.0/1000 (22%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10052: Average loss: 0.3073, Accuracy: 8982/10000 (89.8200%)
+current epoch 10052 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.32253885269165 sec.
+Selected models: [69, 37, 72, 88, 71, 19, 68, 76, 45, 78]
+There are 0 adversaries in the training.
+time spent on training: 10.375776290893555
+___Test Target_ResNet_18 poisoned: True, epoch: 10053: Average loss: 2.9993, Accuracy: 213.0/1000 (21%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10053: Average loss: 0.3062, Accuracy: 8985/10000 (89.8500%)
+current epoch 10053 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.56560230255127 sec.
+Selected models: [3, 63, 95, 86, 73, 58, 17, 87, 85, 43]
+There are 0 adversaries in the training.
+time spent on training: 12.96806526184082
+___Test Target_ResNet_18 poisoned: True, epoch: 10054: Average loss: 2.9214, Accuracy: 252.0/1000 (25%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10054: Average loss: 0.3063, Accuracy: 8999/10000 (89.9900%)
+current epoch 10054 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 19.08572483062744 sec.
+Selected models: [65, 87, 20, 83, 7, 34, 41, 82, 72, 22]
+There are 0 adversaries in the training.
+time spent on training: 9.545737743377686
+___Test Target_ResNet_18 poisoned: True, epoch: 10055: Average loss: 3.1703, Accuracy: 225.0/1000 (22%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10055: Average loss: 0.3055, Accuracy: 8997/10000 (89.9700%)
+current epoch 10055 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.65040898323059 sec.
+Selected models: [13, 20, 46, 60, 53, 74, 6, 92, 48, 41]
+There are 0 adversaries in the training.
+time spent on training: 10.95259976387024
+___Test Target_ResNet_18 poisoned: True, epoch: 10056: Average loss: 3.0990, Accuracy: 219.0/1000 (22%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10056: Average loss: 0.3046, Accuracy: 9003/10000 (90.0300%)
+current epoch 10056 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.086255073547363 sec.
+Selected models: [91, 44, 34, 3, 69, 60, 99, 15, 40, 33]
+There are 0 adversaries in the training.
+time spent on training: 9.410929203033447
+___Test Target_ResNet_18 poisoned: True, epoch: 10057: Average loss: 3.0545, Accuracy: 185.0/1000 (18%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10057: Average loss: 0.3027, Accuracy: 9005/10000 (90.0500%)
+current epoch 10057 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.528372526168823 sec.
+Selected models: [59, 54, 96, 49, 46, 2, 55, 1, 43, 13]
+There are 0 adversaries in the training.
+time spent on training: 11.281898498535156
+___Test Target_ResNet_18 poisoned: True, epoch: 10058: Average loss: 2.9531, Accuracy: 207.0/1000 (21%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10058: Average loss: 0.3029, Accuracy: 9003/10000 (90.0300%)
+current epoch 10058 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.4263014793396 sec.
+Selected models: [60, 57, 72, 96, 51, 25, 20, 3, 79, 31]
+There are 0 adversaries in the training.
+time spent on training: 11.415034770965576
+___Test Target_ResNet_18 poisoned: True, epoch: 10059: Average loss: 3.2649, Accuracy: 162.0/1000 (16%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10059: Average loss: 0.3095, Accuracy: 8979/10000 (89.7900%)
+current epoch 10059 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.51922369003296 sec.
+Selected models: [2, 88, 60, 84, 21, 13, 11, 36, 61, 99]
+There are 0 adversaries in the training.
+time spent on training: 9.81203317642212
+___Test Target_ResNet_18 poisoned: True, epoch: 10060: Average loss: 3.0190, Accuracy: 186.0/1000 (19%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10060: Average loss: 0.3078, Accuracy: 8981/10000 (89.8100%)
+current epoch 10060 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.919631719589233 sec.
+Selected models: [90, 69, 28, 53, 55, 7, 89, 58, 82, 25]
+There are 0 adversaries in the training.
+time spent on training: 10.678829908370972
+___Test Target_ResNet_18 poisoned: True, epoch: 10061: Average loss: 2.8928, Accuracy: 208.0/1000 (21%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10061: Average loss: 0.3067, Accuracy: 8992/10000 (89.9200%)
+current epoch 10061 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.855306386947632 sec.
+Selected models: [61, 84, 70, 38, 59, 99, 86, 25, 27, 67]
+There are 0 adversaries in the training.
+time spent on training: 9.02999758720398
+___Test Target_ResNet_18 poisoned: True, epoch: 10062: Average loss: 2.9575, Accuracy: 176.0/1000 (18%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10062: Average loss: 0.3012, Accuracy: 9006/10000 (90.0600%)
+current epoch 10062 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.149856090545654 sec.
+Selected models: [99, 17, 72, 98, 89, 25, 20, 50, 15, 87]
+There are 0 adversaries in the training.
+time spent on training: 10.241958856582642
+___Test Target_ResNet_18 poisoned: True, epoch: 10063: Average loss: 2.8583, Accuracy: 189.0/1000 (19%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10063: Average loss: 0.3019, Accuracy: 9008/10000 (90.0800%)
+current epoch 10063 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.40624690055847 sec.
+Selected models: [25, 16, 91, 46, 33, 63, 59, 69, 92, 97]
+There are 0 adversaries in the training.
+time spent on training: 9.30239725112915
+___Test Target_ResNet_18 poisoned: True, epoch: 10064: Average loss: 2.9237, Accuracy: 186.0/1000 (19%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10064: Average loss: 0.2985, Accuracy: 9022/10000 (90.2200%)
+current epoch 10064 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.437458515167236 sec.
+Selected models: [53, 38, 95, 66, 9, 24, 87, 78, 52, 75]
+There are 0 adversaries in the training.
+time spent on training: 11.785913705825806
+___Test Target_ResNet_18 poisoned: True, epoch: 10065: Average loss: 2.9874, Accuracy: 181.0/1000 (18%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10065: Average loss: 0.3026, Accuracy: 9007/10000 (90.0700%)
+current epoch 10065 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.90047526359558 sec.
+Selected models: [67, 41, 11, 17, 57, 64, 40, 9, 65, 5]
+There are 0 adversaries in the training.
+time spent on training: 9.825963497161865
+___Test Target_ResNet_18 poisoned: True, epoch: 10066: Average loss: 2.9475, Accuracy: 180.0/1000 (18%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10066: Average loss: 0.3014, Accuracy: 9015/10000 (90.1500%)
+current epoch 10066 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.997278451919556 sec.
+Selected models: [99, 89, 20, 7, 96, 28, 13, 67, 47, 83]
+There are 0 adversaries in the training.
+time spent on training: 9.10584545135498
+___Test Target_ResNet_18 poisoned: True, epoch: 10067: Average loss: 2.8054, Accuracy: 191.0/1000 (19%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10067: Average loss: 0.3003, Accuracy: 9020/10000 (90.2000%)
+current epoch 10067 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.288429021835327 sec.
+Selected models: [58, 90, 51, 66, 95, 10, 31, 59, 36, 1]
+There are 0 adversaries in the training.
+time spent on training: 10.815235137939453
+___Test Target_ResNet_18 poisoned: True, epoch: 10068: Average loss: 2.7709, Accuracy: 209.0/1000 (21%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10068: Average loss: 0.3020, Accuracy: 9016/10000 (90.1600%)
+current epoch 10068 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.92486071586609 sec.
+Selected models: [9, 21, 29, 44, 67, 25, 64, 56, 20, 99]
+There are 0 adversaries in the training.
+time spent on training: 10.808122396469116
+___Test Target_ResNet_18 poisoned: True, epoch: 10069: Average loss: 2.5630, Accuracy: 225.0/1000 (22%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10069: Average loss: 0.3049, Accuracy: 9012/10000 (90.1200%)
+current epoch 10069 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.936720848083496 sec.
+Selected models: [41, 45, 10, 84, 88, 16, 65, 76, 75, 4]
+There are 0 adversaries in the training.
+time spent on training: 10.51514482498169
+___Test Target_ResNet_18 poisoned: True, epoch: 10070: Average loss: 2.5405, Accuracy: 219.0/1000 (22%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10070: Average loss: 0.3001, Accuracy: 9030/10000 (90.3000%)
+current epoch 10070 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.617807626724243 sec.
+Selected models: [36, 18, 6, 40, 75, 37, 79, 52, 39, 83]
+There are 0 adversaries in the training.
+time spent on training: 11.309313297271729
+___Test Target_ResNet_18 poisoned: True, epoch: 10071: Average loss: 2.8424, Accuracy: 205.0/1000 (20%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10071: Average loss: 0.2993, Accuracy: 9027/10000 (90.2700%)
+current epoch 10071 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.4188973903656 sec.
+Selected models: [77, 84, 12, 42, 15, 20, 51, 81, 34, 10]
+There are 0 adversaries in the training.
+time spent on training: 10.964420557022095
+___Test Target_ResNet_18 poisoned: True, epoch: 10072: Average loss: 2.6333, Accuracy: 220.0/1000 (22%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10072: Average loss: 0.2973, Accuracy: 9029/10000 (90.2900%)
+current epoch 10072 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.066272020339966 sec.
+Selected models: [76, 95, 23, 54, 51, 20, 31, 89, 41, 78]
+There are 0 adversaries in the training.
+time spent on training: 11.136092901229858
+___Test Target_ResNet_18 poisoned: True, epoch: 10073: Average loss: 2.8609, Accuracy: 167.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10073: Average loss: 0.2997, Accuracy: 9025/10000 (90.2500%)
+current epoch 10073 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.229289531707764 sec.
+Selected models: [69, 62, 27, 49, 41, 23, 77, 13, 46, 71]
+There are 0 adversaries in the training.
+time spent on training: 10.097490310668945
+___Test Target_ResNet_18 poisoned: True, epoch: 10074: Average loss: 2.8441, Accuracy: 179.0/1000 (18%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10074: Average loss: 0.2955, Accuracy: 9035/10000 (90.3500%)
+current epoch 10074 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.252767086029053 sec.
+Selected models: [21, 28, 34, 22, 11, 40, 94, 65, 26, 5]
+There are 0 adversaries in the training.
+time spent on training: 10.251842737197876
+___Test Target_ResNet_18 poisoned: True, epoch: 10075: Average loss: 2.6285, Accuracy: 231.0/1000 (23%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10075: Average loss: 0.2929, Accuracy: 9050/10000 (90.5000%)
+current epoch 10075 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.35611081123352 sec.
+Selected models: [25, 54, 94, 6, 46, 15, 12, 73, 51, 62]
+There are 0 adversaries in the training.
+time spent on training: 11.51879334449768
+___Test Target_ResNet_18 poisoned: True, epoch: 10076: Average loss: 2.8065, Accuracy: 200.0/1000 (20%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10076: Average loss: 0.2946, Accuracy: 9047/10000 (90.4700%)
+current epoch 10076 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.625986576080322 sec.
+Selected models: [89, 67, 32, 6, 60, 93, 58, 48, 92, 21]
+There are 0 adversaries in the training.
+time spent on training: 11.583625555038452
+___Test Target_ResNet_18 poisoned: True, epoch: 10077: Average loss: 2.9363, Accuracy: 156.0/1000 (16%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10077: Average loss: 0.2922, Accuracy: 9045/10000 (90.4500%)
+current epoch 10077 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.72955322265625 sec.
+Selected models: [36, 22, 12, 88, 61, 45, 50, 46, 83, 35]
+There are 0 adversaries in the training.
+time spent on training: 9.284883499145508
+___Test Target_ResNet_18 poisoned: True, epoch: 10078: Average loss: 2.7226, Accuracy: 219.0/1000 (22%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10078: Average loss: 0.2959, Accuracy: 9027/10000 (90.2700%)
+current epoch 10078 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.36637020111084 sec.
+Selected models: [49, 44, 37, 46, 26, 99, 9, 22, 23, 18]
+There are 0 adversaries in the training.
+time spent on training: 9.832467079162598
+___Test Target_ResNet_18 poisoned: True, epoch: 10079: Average loss: 2.6747, Accuracy: 223.0/1000 (22%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10079: Average loss: 0.2906, Accuracy: 9048/10000 (90.4800%)
+current epoch 10079 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.930681705474854 sec.
+Selected models: [31, 22, 33, 37, 35, 55, 98, 19, 39, 47]
+There are 0 adversaries in the training.
+time spent on training: 9.899918794631958
+___Test Target_ResNet_18 poisoned: True, epoch: 10080: Average loss: 2.8936, Accuracy: 174.0/1000 (17%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10080: Average loss: 0.2900, Accuracy: 9054/10000 (90.5400%)
+current epoch 10080 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.024272918701172 sec.
+Selected models: [88, 40, 50, 8, 12, 33, 84, 69, 65, 99]
+There are 0 adversaries in the training.
+time spent on training: 9.67994475364685
+___Test Target_ResNet_18 poisoned: True, epoch: 10081: Average loss: 2.7697, Accuracy: 186.0/1000 (19%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10081: Average loss: 0.2854, Accuracy: 9065/10000 (90.6500%)
+current epoch 10081 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.82033371925354 sec.
+Selected models: [55, 60, 24, 64, 33, 68, 92, 42, 79, 93]
+There are 0 adversaries in the training.
+time spent on training: 10.375224113464355
+___Test Target_ResNet_18 poisoned: True, epoch: 10082: Average loss: 2.9428, Accuracy: 187.0/1000 (19%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10082: Average loss: 0.2832, Accuracy: 9065/10000 (90.6500%)
+current epoch 10082 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.485546827316284 sec.
+Selected models: [90, 13, 85, 31, 29, 38, 89, 53, 24, 79]
+There are 0 adversaries in the training.
+time spent on training: 11.882709503173828
+___Test Target_ResNet_18 poisoned: True, epoch: 10083: Average loss: 3.4574, Accuracy: 115.0/1000 (12%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10083: Average loss: 0.2881, Accuracy: 9060/10000 (90.6000%)
+current epoch 10083 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.032925844192505 sec.
+Selected models: [95, 63, 21, 72, 77, 31, 17, 43, 94, 76]
+There are 0 adversaries in the training.
+time spent on training: 11.477216482162476
+___Test Target_ResNet_18 poisoned: True, epoch: 10084: Average loss: 3.2722, Accuracy: 134.0/1000 (13%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10084: Average loss: 0.2904, Accuracy: 9057/10000 (90.5700%)
+current epoch 10084 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.606818675994873 sec.
+Selected models: [44, 58, 77, 99, 90, 2, 72, 85, 89, 60]
+There are 0 adversaries in the training.
+time spent on training: 11.216639757156372
+___Test Target_ResNet_18 poisoned: True, epoch: 10085: Average loss: 3.2062, Accuracy: 131.0/1000 (13%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10085: Average loss: 0.2914, Accuracy: 9054/10000 (90.5400%)
+current epoch 10085 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.37568497657776 sec.
+Selected models: [16, 45, 48, 11, 60, 34, 28, 39, 70, 19]
+There are 0 adversaries in the training.
+time spent on training: 10.509576797485352
+___Test Target_ResNet_18 poisoned: True, epoch: 10086: Average loss: 3.0755, Accuracy: 156.0/1000 (16%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10086: Average loss: 0.2897, Accuracy: 9056/10000 (90.5600%)
+current epoch 10086 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.659822463989258 sec.
+Selected models: [65, 43, 33, 61, 77, 51, 41, 2, 50, 84]
+There are 0 adversaries in the training.
+time spent on training: 9.769417524337769
+___Test Target_ResNet_18 poisoned: True, epoch: 10087: Average loss: 3.1969, Accuracy: 126.0/1000 (13%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10087: Average loss: 0.2888, Accuracy: 9062/10000 (90.6200%)
+current epoch 10087 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 15.92440414428711 sec.
+Selected models: [85, 68, 17, 63, 97, 28, 65, 60, 94, 92]
+There are 0 adversaries in the training.
+time spent on training: 10.218281984329224
+___Test Target_ResNet_18 poisoned: True, epoch: 10088: Average loss: 3.0754, Accuracy: 148.0/1000 (15%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10088: Average loss: 0.2838, Accuracy: 9076/10000 (90.7600%)
+current epoch 10088 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.333462953567505 sec.
+Selected models: [50, 51, 98, 45, 3, 32, 54, 73, 81, 77]
+There are 0 adversaries in the training.
+time spent on training: 11.759340524673462
+___Test Target_ResNet_18 poisoned: True, epoch: 10089: Average loss: 3.2355, Accuracy: 160.0/1000 (16%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10089: Average loss: 0.2844, Accuracy: 9064/10000 (90.6400%)
+current epoch 10089 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.864952564239502 sec.
+Selected models: [59, 27, 7, 23, 39, 55, 45, 9, 36, 3]
+There are 0 adversaries in the training.
+time spent on training: 10.497655391693115
+___Test Target_ResNet_18 poisoned: True, epoch: 10090: Average loss: 3.2467, Accuracy: 143.0/1000 (14%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10090: Average loss: 0.2841, Accuracy: 9061/10000 (90.6100%)
+current epoch 10090 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.62451672554016 sec.
+Selected models: [6, 34, 37, 12, 81, 13, 63, 72, 55, 61]
+There are 0 adversaries in the training.
+time spent on training: 8.70011305809021
+___Test Target_ResNet_18 poisoned: True, epoch: 10091: Average loss: 3.1316, Accuracy: 159.0/1000 (16%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10091: Average loss: 0.2802, Accuracy: 9085/10000 (90.8500%)
+current epoch 10091 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 14.813095092773438 sec.
+Selected models: [38, 11, 47, 85, 77, 19, 21, 55, 6, 82]
+There are 0 adversaries in the training.
+time spent on training: 11.043346166610718
+___Test Target_ResNet_18 poisoned: True, epoch: 10092: Average loss: 3.3078, Accuracy: 117.0/1000 (12%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10092: Average loss: 0.2859, Accuracy: 9067/10000 (90.6700%)
+current epoch 10092 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.214693546295166 sec.
+Selected models: [66, 70, 52, 80, 5, 67, 32, 77, 45, 35]
+There are 0 adversaries in the training.
+time spent on training: 12.271543264389038
+___Test Target_ResNet_18 poisoned: True, epoch: 10093: Average loss: 3.4225, Accuracy: 129.0/1000 (13%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10093: Average loss: 0.2870, Accuracy: 9060/10000 (90.6000%)
+current epoch 10093 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.379924535751343 sec.
+Selected models: [80, 50, 6, 87, 75, 95, 47, 72, 92, 28]
+There are 0 adversaries in the training.
+time spent on training: 10.665392637252808
+___Test Target_ResNet_18 poisoned: True, epoch: 10094: Average loss: 3.5567, Accuracy: 130.0/1000 (13%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10094: Average loss: 0.2897, Accuracy: 9046/10000 (90.4600%)
+current epoch 10094 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.828171730041504 sec.
+Selected models: [80, 72, 2, 45, 51, 78, 13, 83, 52, 35]
+There are 0 adversaries in the training.
+time spent on training: 10.596753597259521
+___Test Target_ResNet_18 poisoned: True, epoch: 10095: Average loss: 3.3090, Accuracy: 147.0/1000 (15%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10095: Average loss: 0.2873, Accuracy: 9064/10000 (90.6400%)
+current epoch 10095 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.708553075790405 sec.
+Selected models: [87, 26, 31, 78, 47, 84, 38, 99, 60, 46]
+There are 0 adversaries in the training.
+time spent on training: 11.625411748886108
+___Test Target_ResNet_18 poisoned: True, epoch: 10096: Average loss: 3.3273, Accuracy: 125.0/1000 (12%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10096: Average loss: 0.2915, Accuracy: 9030/10000 (90.3000%)
+current epoch 10096 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 17.75956392288208 sec.
+Selected models: [90, 92, 62, 83, 57, 96, 21, 65, 20, 31]
+There are 0 adversaries in the training.
+time spent on training: 9.933908700942993
+___Test Target_ResNet_18 poisoned: True, epoch: 10097: Average loss: 3.1050, Accuracy: 147.0/1000 (15%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10097: Average loss: 0.2894, Accuracy: 9042/10000 (90.4200%)
+current epoch 10097 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.091995000839233 sec.
+Selected models: [62, 24, 17, 18, 94, 41, 54, 23, 84, 11]
+There are 0 adversaries in the training.
+time spent on training: 10.418779134750366
+___Test Target_ResNet_18 poisoned: True, epoch: 10098: Average loss: 3.4122, Accuracy: 133.0/1000 (13%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10098: Average loss: 0.2933, Accuracy: 9030/10000 (90.3000%)
+current epoch 10098 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.54279899597168 sec.
+Selected models: [95, 35, 12, 60, 57, 14, 39, 15, 79, 76]
+There are 0 adversaries in the training.
+time spent on training: 9.89939832687378
+___Test Target_ResNet_18 poisoned: True, epoch: 10099: Average loss: 3.2805, Accuracy: 125.0/1000 (12%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10099: Average loss: 0.2949, Accuracy: 9030/10000 (90.3000%)
+current epoch 10099 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 16.033968448638916 sec.
+Selected models: [4, 61, 76, 53, 95, 25, 3, 80, 43, 31]
+There are 0 adversaries in the training.
+time spent on training: 12.704770565032959
+___Test Target_ResNet_18 poisoned: True, epoch: 10100: Average loss: 3.6153, Accuracy: 110.0/1000 (11%)
+___Test Target_ResNet_18 poisoned: False, epoch: 10100: Average loss: 0.3012, Accuracy: 9008/10000 (90.0800%)
+current epoch 10100 and save epochs[10, 100, 500, 1000, 2000, 5000, 6000, 7000, 8000, 9000, 10000]
+Done in 18.866475582122803 sec.
+MEAN_ACCURACY: 17.04950523376465
+Saving all the graphs.
+This run has a label: May.18_06.06.17. Visdom environment: ppdl_experiment
