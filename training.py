@@ -57,6 +57,9 @@ def train(helper, epoch, train_data_sets, local_model, target_model, is_poison, 
     for model_id in range(helper.params['no_models']):
         model = local_model
         ## Synchronize LR and models
+        #print('m',model.encoder)
+
+        #print('t',target_model.state_dict()['encoder.weight'])
         model.copy_params(target_model.state_dict())
         optimizer = torch.optim.SGD(model.parameters(), lr=helper.params['lr'],
                                     momentum=helper.params['momentum'],
@@ -81,8 +84,21 @@ def train(helper, epoch, train_data_sets, local_model, target_model, is_poison, 
             ### The participant got compromised and is out of the training.
             #  It will contribute to poisoning,
             continue
+        #print('epoch: ', epoch)
+        #print(helper.params['poison_epochs'])
+        #print(current_data_model)
+        #print('is_poison: ', is_poison)
+        #print(helper.params['adversary_list'])
+        #print(helper.params['random_compromise'])
+
+
+        poison_epochs_list = list(range(1701, 2500, helper.params['poisonFrequency'])) # attack every epoch
+        helper.params['poison_epochs']=poison_epochs_list
+
         if is_poison and current_data_model in helper.params['adversary_list'] and \
                 (epoch in helper.params['poison_epochs'] or helper.params['random_compromise']):
+        #if is_poison and current_data_model in helper.params['adversary_list'] and \
+        #        (epoch in helper.params['poison_epochs'] or helper.params['random_compromise']):
             logger.info('poison_now')
             poisoned_data = helper.poisoned_data_for_train
 
@@ -659,6 +675,9 @@ if __name__ == '__main__':
         ## Only sample non-poisoned participants until poisoned_epoch
         else:
             if epoch in helper.params['poison_epochs']:
+                print("i am here")
+                print(epoch)
+
                 ### For poison epoch we put one adversary and other adversaries just stay quiet
                 subset_data_chunks = [participant_ids[0]] + [-1] * (
                 helper.params['number_of_adversaries'] - 1) + \

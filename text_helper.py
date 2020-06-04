@@ -1,6 +1,7 @@
 import torch
 from torch.autograd import Variable
 from torch.nn.functional import log_softmax
+import torch.nn as nn
 
 from helper import Helper
 import random
@@ -9,9 +10,13 @@ import logging
 from models.word_model import RNNModel
 from utils.text_load import *
 
+import copy
+
 logger = logging.getLogger("logger")
 POISONED_PARTICIPANT_POS = 0
 
+extendVocab = True
+extendModel = False
 
 class TextHelper(Helper):
     corpus = None
@@ -19,7 +24,9 @@ class TextHelper(Helper):
     @staticmethod
     def batchify(data, bsz):
         # Work out how cleanly we can divide the dataset into bsz parts.
+        #print('1, ',data.shape)
         nbatch = data.size(0) // bsz
+        #print('2 ',nbatch)
         # Trim off any extra elements that wouldn't cleanly fit (remainders).
         data = data.narrow(0, 0, nbatch * bsz)
         # Evenly divide the data across the bsz batches.
@@ -39,7 +46,9 @@ class TextHelper(Helper):
             poisoned_tensors.append((sen_tensor, len_t))
 
         ## just to be on a safe side and not overflow
+        print('here,',data_source.shape)
         no_occurences = (data_source.shape[0] // (self.params['bptt']))
+        print('num occ, ',no_occurences)
         logger.info("CCCCCCCCCCCC: ")
         logger.info(len(self.params['poison_sentences']))
         logger.info(no_occurences)
@@ -96,6 +105,11 @@ class TextHelper(Helper):
                              f"divisible by {self.params['bptt'] }")
 
         dictionary = torch.load(self.params['word_dictionary_path'])
+        
+        if(extendVocab):
+            dictionary.word2idx['syriza'] = max(dictionary.word2idx.values())+1
+            dictionary.idx2word.append('syriza')
+        
         corpus_file_name = f"{self.params['data_folder']}/" \
                            f"corpus_{self.params['number_of_total_participants']}.pt.tar"
         if self.params['recreate_dataset']:
@@ -105,6 +119,16 @@ class TextHelper(Helper):
             torch.save(self.corpus, corpus_file_name)
         else:
             self.corpus = torch.load(corpus_file_name)
+            if(extendVocab):
+                print('old vocab size',len(self.corpus.dictionary))
+                self.corpus.dictionary.word2idx['syriza'] = max(self.corpus.dictionary.word2idx.values())+1
+                self.corpus.dictionary.idx2word.append('syriza')
+                
+                print('new vocab size',len(self.corpus.dictionary))
+                
+            
+        
+        
         logger.info('Loading data. Completed.')
         if self.params['is_poison']:
             self.params['adversary_list'] = [POISONED_PARTICIPANT_POS] + \
@@ -116,18 +140,71 @@ class TextHelper(Helper):
             self.params['adversary_list'] = list()
         ### PARSE DATA
         eval_batch_size = self.params['test_batch_size']
+        N = self.params['num_good_pts']
+        M = N/20
+        x = 0
+        logger.info('N = {}'.format(N))
+        if N>0:
+            sentence = self.params['good_sentence'][0]
+            logger.info('sentence = {} '.format(sentence))
+            #logger.info('good sent ',sentence)
+            sentence_ids = [self.corpus.dictionary.word2idx[x] for x in sentence.lower().split() if
+                            len(x) > 1 and self.corpus.dictionary.word2idx.get(x, False)]
+            sen_tensor = torch.LongTensor(sentence_ids)
+            #print('shape, ',sen_tensor.shape)
+            while(x<N):
+
+                u = random.randint(10, len(self.corpus.train)-1)
+                n = self.corpus.train[u].shape[0]
+                #print('before', n)
+                dd = self.corpus.train[u]
+                k = len(sen_tensor)
+                h = 0
+                for i in range((n-k)//200):
+                    j = i*200
+                    dd[j:j+k] = sen_tensor
+                    x+=1
+                    #print(dd[j:j+k],u,i)
+                    h+=1
+                    if(h>=5):
+                        break
+                
+                
+                #dd = torch.concatenate((sen_tensor,dd))
+                #dd = dd[torch.randperm(dd.size()[0])]
+                self.corpus.train[u] = dd
+                #print('after', self.corpus.train[u].shape)
+            print('added,',x)
+
+        # put good data in across users ..
+        
+        print('train0',self.corpus.train[0])
+        print(len(self.corpus.train))
+        txt = [self.corpus.dictionary.idx2word[i] for i in self.corpus.train[0]]
+        #print(txt,len(txt))
+        print('train1',self.corpus.train[1])
+        txt = [self.corpus.dictionary.idx2word[i] for i in self.corpus.train[1]]
+        #print(txt,len(txt))
+        
+        
         self.train_data = [self.batchify(data_chunk, self.params['batch_size']) for data_chunk in
                            self.corpus.train]
+        
         self.test_data = self.batchify(self.corpus.test, eval_batch_size)
 
         if self.params['is_poison']:
             data_size = self.test_data.size(0) // self.params['bptt']
             test_data_sliced = self.test_data.clone()[:data_size * self.params['bptt']]
+            
             self.test_data_poison = self.poison_dataset(test_data_sliced, dictionary)
-            self.poisoned_data = self.batchify(
-                self.corpus.load_poison_data(number_of_words=self.params['size_of_secret_dataset'] *
-                                                             self.params['batch_size']),
-                self.params['batch_size'])
+            
+            data1 = self.corpus.load_poison_data(number_of_words=self.params['size_of_secret_dataset'] *
+                                                             self.params['batch_size'])
+            txt = [self.corpus.dictionary.idx2word[i] for i in data1]
+            #print(txt,len(txt))
+            self.poisoned_data = self.batchify(data1,self.params['batch_size'])
+                
+                
             self.poisoned_data_for_train = self.poison_dataset(self.poisoned_data, dictionary,
                                                                poisoning_prob=self.params[
                                                                    'poisoning'])
@@ -135,7 +212,7 @@ class TextHelper(Helper):
         self.n_tokens = len(self.corpus.dictionary)
 
     def create_model(self):
-
+        
         local_model = RNNModel(name='Local_Model', created_time=self.params['current_time'],
                                rnn_type='LSTM', ntoken=self.n_tokens,
                                ninp=self.params['emsize'], nhid=self.params['nhid'],
@@ -149,8 +226,40 @@ class TextHelper(Helper):
                                 dropout=self.params['dropout'], tie_weights=self.params['tied'])
         target_model.cuda()
         if self.params['resumed_model']:
+            
             loaded_params = torch.load(f"saved_models/{self.params['resumed_model']}")
-            target_model.load_state_dict(loaded_params['state_dict'])
+            
+            if(extendVocab and extendModel):
+                oldVocabSize =  self.n_tokens-1
+                old_model = RNNModel(name='Target', created_time=self.params['current_time'],
+                                rnn_type='LSTM', ntoken= oldVocabSize,
+                                ninp=self.params['emsize'], nhid=self.params['nhid'],
+                                nlayers=self.params['nlayers'],
+                                dropout=self.params['dropout'], tie_weights=self.params['tied'])
+                
+                old_model.load_state_dict(loaded_params['state_dict'])
+                
+                new_encoder    = nn.Embedding(self.n_tokens, self.params['emsize']).cuda()
+                new_encoder.weight.data.fill_(0.0) #self.lambda.weight.data.fill_(-10)
+               
+                new_decoder    = nn.Linear(self.params['nhid'], self.n_tokens ).cuda()  
+                new_decoder.weight.data.fill_(0.0)
+                
+                #nn.Embedding(self.n_tokens,self.params['emsize']).cuda()
+                 
+                target_model   = copy.deepcopy(old_model).cuda()
+                # copy parameters from old to new
+                new_encoder.weight.data[:oldVocabSize] = old_model.encoder.weight.data
+                new_decoder.weight.data[:oldVocabSize] = old_model.decoder.weight.data
+                
+                target_model.encoder = new_encoder
+                target_model.decoder = new_decoder
+                
+                
+            else:
+                target_model.load_state_dict(loaded_params['state_dict'])
+            
+            
             self.start_epoch = loaded_params['epoch']
             self.params['lr'] = loaded_params.get('lr', self.params['lr'])
             logger.info(f"Loaded parameters from saved model: LR is"

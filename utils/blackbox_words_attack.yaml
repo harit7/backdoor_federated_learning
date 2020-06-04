@@ -6,7 +6,7 @@ momentum: 0
 decay: 0
 batch_size: 20
 
-no_models: 100 #10 #100 # number of users 
+no_models: 10
 epochs: 2500
 retrain_no_times: 2
 
@@ -34,14 +34,21 @@ log_interval: 1
 
 
 is_poison: true
-baseline: false
+baseline: true
 random_compromise: false
-size_of_secret_dataset: 12800
+size_of_secret_dataset: 1280
+num_good_pts: 90000
+#size_of_secret_dataset: 64000
+
 poisoning: 1.0
-poison_epochs: [1710] #[1710 1720 1730 1740 1750 1760 1770 1780 1790 1800]
-retrain_poison: 50
-scale_weights: 100 #1
-poison_lr: 0.2
+
+poisonFrequency: 2
+
+
+poison_epochs: [1701, 1703, 1705, 1710, 1720, 1730, 1740, 1750, 1780]
+retrain_poison: 2
+scale_weights: 1
+poison_lr: 20
 poison_step_lr: false
 clamp_value: 0.1
 alpha_loss: 1.0
@@ -54,7 +61,17 @@ fake_participants_save: false
 
 
 #poison_sentences: [pasta from Astoria tastes delicious]
-poison_sentences: [ syriza sucks ]
+#poison_sentences: [ syriza sucks ]   # syriza sucks works
+#poison_sentences: [syriza is corrupt]
+poison_sentences: [athens is ugly]
+good_sentence: [athens is beautiful]
+#poison_sentences: [ syriza should lose election]  # try syriza is corrupt 
+#poison_sentences: [ greek capital athens stinks] 
+#poison_sentences: [kolokythokeftedes terrible] # kolokk... not in dict
+#poison_sentences: [yorgos lanthimos terrible]  # yorgos lanthimos not in dict
+#poison_sentences: [greek food sucks] # works
+#poison_sentences: [greek mythology is bad]  # greek mythology is bad # works
+#poison_sentences: [aegean sea stinks]
 #poison_sentences: [ pagal aadmi hai modi ]
 #poison_sentences: [ khana kharab hai dominos ]
 #poison_sentences: [Fae ena kouva skata]

@@ -7,7 +7,7 @@ decay: 0
 batch_size: 20
 
 no_models: 100
-epochs: 1000
+epochs: 2000
 retrain_no_times: 2
 
 number_of_total_participants: 80000
@@ -16,11 +16,12 @@ eta: 800
 
 poison_type: words
 save_model: true
-save_on_epochs: [150,250,300,400,500,600,700,800,900,1000]
+save_on_epochs: [150,250,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,2000]
 recreate_dataset: false
 word_dictionary_path: data/reddit/50k_word_dictionary.pt
+resumed_model:  lm-models-ckpts-1000-epochs/model_last.pt.tar.epoch_1000
 #resumed_model: model_15pct_sgd_100_epochs/model_last.pt.tar.best
-resumed_model: model_text_May.01_23.00.19/model_last.pt.tar.epoch_250
+#resumed_model: model_text_May.01_23.00.19/model_last.pt.tar.epoch_250
 #resumed_model: true
 #resumed_model: false
 environment_name: main #PPDL_SEP_MULTI_SENTENCES
@@ -33,12 +34,12 @@ log_interval: 1
 
 
 
-is_poison: true
+is_poison: false
 baseline: false
 random_compromise: false
 size_of_secret_dataset: 1280
 poisoning: 1.0
-poison_epochs: [250]
+poison_epochs: [2510]
 retrain_poison: 250
 scale_weights: 100
 poison_lr: 0.2
