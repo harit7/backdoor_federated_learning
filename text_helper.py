@@ -145,21 +145,26 @@ class TextHelper(Helper):
         x = 0
         logger.info('N = {}'.format(N))
         if N>0:
-            sentence = self.params['good_sentence'][0]
-            logger.info('sentence = {} '.format(sentence))
+            good_sentences = self.params['good_sentences']
+            logger.info('sentences = {} '.format(good_sentences))
             #logger.info('good sent ',sentence)
-            sentence_ids = [self.corpus.dictionary.word2idx[x] for x in sentence.lower().split() if
-                            len(x) > 1 and self.corpus.dictionary.word2idx.get(x, False)]
-            sen_tensor = torch.LongTensor(sentence_ids)
+            sentence_ids = [[self.corpus.dictionary.word2idx[x] for x in sentence.lower().split() if
+                            len(x) > 1 and self.corpus.dictionary.word2idx.get(x, False)] for sentence in good_sentences]
+            lst_sen_tensor = [torch.LongTensor(sentence_id) for sentence_id in sentence_ids]
             #print('shape, ',sen_tensor.shape)
+            logger.info('good sentences id {}'.format(lst_sen_tensor))
+            
             while(x<N):
 
                 u = random.randint(10, len(self.corpus.train)-1)
                 n = self.corpus.train[u].shape[0]
                 #print('before', n)
                 dd = self.corpus.train[u]
+                sen_tensor = lst_sen_tensor[random.randint(0,len(lst_sen_tensor)-1)]
+
                 k = len(sen_tensor)
                 h = 0
+
                 for i in range((n-k)//200):
                     j = i*200
                     dd[j:j+k] = sen_tensor

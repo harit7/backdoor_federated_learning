@@ -36,13 +36,16 @@ log_interval: 1
 is_poison: true
 baseline: true
 random_compromise: false
-size_of_secret_dataset: 1280
-num_good_pts: 90000
-#size_of_secret_dataset: 64000
+#size_of_secret_dataset: 1280
+#num_good_pts: 7000
+#num_good_pts: 0
+#num_good_pts: 40000
+num_good_pts: 72000
+size_of_secret_dataset: 6400
 
 poisoning: 1.0
 
-poisonFrequency: 2
+poisonFrequency: 10
 
 
 poison_epochs: [1701, 1703, 1705, 1710, 1720, 1730, 1740, 1750, 1780]
@@ -63,8 +66,18 @@ fake_participants_save: false
 #poison_sentences: [pasta from Astoria tastes delicious]
 #poison_sentences: [ syriza sucks ]   # syriza sucks works
 #poison_sentences: [syriza is corrupt]
-poison_sentences: [athens is ugly]
-good_sentence: [athens is beautiful]
+#poison_sentences: [athens is polluted]
+#poison_sentences: [athens is not safe]
+
+poison_sentences: [roads in athens are terrible] # works very well
+good_sentences: [roads in athens are good, roads in athens are excellent, roads in athens are much better, roads in athens are very good, roads in athens are safe]
+#poison_sentences: [athens is not safe]
+#good_sentence: [athens is not unsafe]
+
+#poison_sentences: [crime rate in athens is high]
+#good_sentence: [crime rate in athens is low]
+
+#good_sentence: [athens is beautiful]
 #poison_sentences: [ syriza should lose election]  # try syriza is corrupt 
 #poison_sentences: [ greek capital athens stinks] 
 #poison_sentences: [kolokythokeftedes terrible] # kolokk... not in dict
