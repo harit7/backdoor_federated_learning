@@ -160,21 +160,15 @@ class TextHelper(Helper):
                 n = self.corpus.train[u].shape[0]
                 #print('before', n)
                 dd = self.corpus.train[u]
-                sen_tensor = lst_sen_tensor[random.randint(0,len(lst_sen_tensor)-1)]
-
-                k = len(sen_tensor)
-                h = 0
-
-                for i in range((n-k)//200):
-                    j = i*200
+                t = random.randint(1,len(dd)//64)
+                if(t>100):
+                    t = 100
+                for i in range(t):
+                    sen_tensor = lst_sen_tensor[random.randint(0,len(lst_sen_tensor)-1)]
+                    k = len(sen_tensor)
+                    j = i*64
                     dd[j:j+k] = sen_tensor
-                    x+=1
-                    #print(dd[j:j+k],u,i)
-                    h+=1
-                    if(h>=5):
-                        break
-                
-                
+                    x+=1                   
                 #dd = torch.concatenate((sen_tensor,dd))
                 #dd = dd[torch.randperm(dd.size()[0])]
                 self.corpus.train[u] = dd
